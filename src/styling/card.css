@@ -1,0 +1,53 @@
+.recipe-card {
+  width: 300px; /* Set a fixed width for the card */
+  height: 350px; /* Set a fixed height for the card */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.1s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin: 20px; /* Margin around cards */
+}
+
+.recipe-card img {
+  height: 180px; /* Set a consistent height for images */
+  width: 100%; /* Make the image fill the width of the card */
+  object-fit: cover; /* Maintain aspect ratio while covering */
+}
+
+.recipe-card h4 {
+  margin: 0; /* Remove default margin */
+  text-overflow: ellipsis; /* Ellipsis for long titles */
+  overflow: hidden; /* Prevent overflow */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.recipe-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.recipe-card .ui.card .content {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Align items vertically */
+  justify-content: space-between; /* Space between items */
+  height: 100%; /* Ensure the content takes full height */
+}
+
+.recipe-card .ui.card .content h4 {
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.recipe-card .ui.card .content button {
+  margin-top: 10px; /* Space between buttons */
+}
+
+/* Optional: Add styles for the buttons to enhance appearance */
+.recipe-card .ui.button {
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for buttons */
+}
+
+.recipe-card .ui.button:hover {
+  background-color: #007bff; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}

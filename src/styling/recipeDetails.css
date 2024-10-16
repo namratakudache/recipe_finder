@@ -1,0 +1,61 @@
+.details-page {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align the items */
+    padding: 20px; /* Add padding around the page */
+    background-color: #f8f8f8; /* Light background color */
+    min-height: 100vh; /* Ensure full height for the page */
+  }
+  
+  .details-card {
+    width: 80%; /* Set a fixed width for the details card */
+    max-width: 600px; /* Maximum width for larger screens */
+    background-color: #fff; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    overflow: hidden; /* Prevent overflow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    margin-bottom: 20px; /* Space between cards */
+  }
+  
+  .details-card img {
+    width: 100%; /* Make the image fill the width of the card */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  }
+  
+  .details-card h2 {
+    margin: 16px; /* Margin for headings */
+    font-size: 24px; /* Font size for the title */
+    text-align: center; /* Center align the title */
+  }
+  
+  .details-card p {
+    margin: 16px; /* Margin for paragraphs */
+    font-size: 16px; /* Font size for content */
+    line-height: 1.5; /* Line height for readability */
+    color: #333; /* Dark text color */
+  }
+  
+  .details-card .ui.button {
+    display: block; /* Block display for buttons */
+    width: 100%; /* Full width buttons */
+    margin: 20px auto; /* Center the button with margin */
+    padding: 10px; /* Padding for buttons */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .details-card .ui.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .details-card {
+      width: 90%; /* Responsive width for smaller screens */
+    }
+  }
+  
