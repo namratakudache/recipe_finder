@@ -1,0 +1,53 @@
+/* Home.css */
+
+/* Style for the header section */
+.bg-image {
+  position: relative;
+  background: linear-gradient(rgba(8, 8, 8, 0.3), rgba(8, 8, 8, 0.3)),
+    url("https://t3.ftcdn.net/jpg/08/52/52/86/360_F_852528654_xAFMy73zCSbgWs2BnqukjzrTqF2JHter.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Flexbox properties to center content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+/* Title styling */
+.header-title {
+
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  color: #fff;
+  font-size: 80px;
+  margin-bottom: 32px;
+  text-align: center; /* Center text */
+}
+
+/* Button styling */
+.ui.button {
+  font-size: 1.5em; /* Button text size */
+  padding: 10px 20px; /* Button padding */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for button */
+.ui.button:hover {
+  background-color: #0056b3; /* Darken the button color on hover */
+  color: white; /* Ensure text is readable */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2em; /* Adjust title size for smaller screens */
+  }
+
+  .ui.button {
+    font-size: 1.2em; /* Smaller button text on mobile */
+  }
+}

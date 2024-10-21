@@ -1,7 +1,8 @@
-import React from "react";
-import Header from "../Components/Common/Header";
+import React, { useEffect } from "react";
+import Header from "../Header";
 import { Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import "./home.css";
 
 const Home = () => {
   return (

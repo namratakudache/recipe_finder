@@ -19,3 +19,5 @@ export const getRecipe = async (searchedQuery) => {
     return error.response;
   }
 };
+
+

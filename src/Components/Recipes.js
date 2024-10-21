@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import RecipeList from "../Components/Common/RecipeList";
-import Search from "../Components/Common/Search";
-import { getRecipes } from "../Components/Services/api";
+import RecipeList from "../Components/RecipeList";
+import Search from "./Search";
+import { getRecipes } from "./Services/api";
 
 const Recipes = () => {
   const [searchedQuery, setSearchedQuery] = useState("Pizza");

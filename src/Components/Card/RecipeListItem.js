@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button, Card } from "semantic-ui-react";
-import "../../styling/card.css"; // Ensure to import the CSS file
+import "./card.css";
 
 const RecipeListItem = ({ recipe }) => {
   return (
     <Card className="recipe-card">
-      {" "}
-      {/* Apply the class here */}
       <img src={recipe.image_url} alt="thumbnail" style={{ height: 180 }} />
       <Card.Content>
         <Card.Header content={recipe.title} />

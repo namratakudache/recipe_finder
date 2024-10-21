@@ -1,5 +1,5 @@
 import { Container, Header, Grid } from "semantic-ui-react";
-import RecipeListItem from "./RecipeListItem";
+import RecipeListItem from "./Card/RecipeListItem";
 const RecipeList = ({ recipes, searchedQuery }) => {
   return (
     <Container>

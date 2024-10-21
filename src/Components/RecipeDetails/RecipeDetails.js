@@ -10,7 +10,7 @@ import {
   Icon,
 } from "semantic-ui-react";
 import { getRecipe } from "../Services/api";
-import "../../styling/recipeDetails.css";
+import "./recipeDetails.css";
 
 const RecipeDetails = () => {
   const [recipe, setRecipe] = useState({});
@@ -33,6 +33,7 @@ const RecipeDetails = () => {
 
     // Load reviews from local storage when the component mounts
     const storedReviews = localStorage.getItem(`reviews_${recipeId}`);
+    console.log("items: ", storedReviews);
     if (storedReviews) {
       const parsedReviews = JSON.parse(storedReviews);
       setReviews(parsedReviews.reviews || []);
